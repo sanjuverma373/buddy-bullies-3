@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import Hadersection from './Components/Hadersection';
+import Mintingsection from './Components/Mintingsection';
+import Mapsection from './Components/Mapsection';
+import Roadmapsection from './Components/Roadmapsection';
+import Accordionsec from './Components/Accordionsec';
+import Teamsection from './Components/Teamsection';
+import Footersection from './Components/Footersection';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Hadersection />
+     <Mintingsection/>
+     <Mapsection/>
+     <Roadmapsection/>
+    <Accordionsec/>
+    <Teamsection/>
+    <Footersection/>
     </div>
   );
 }
